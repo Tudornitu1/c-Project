@@ -56,3 +56,25 @@ public:
     }
 };
 
+int main() {
+    // Read event location characteristics
+    int maxSeats, numZones, seatsPerZone;
+    std::cout << "Enter max seats: ";
+    std::cin >> maxSeats;
+    std::cout << "Enter number of zones: ";
+    std::cin >> numZones;
+    std::cout << "Enter seats per zone: ";
+    std::cin >> seatsPerZone;
+
+    EventLocation eventLocation(maxSeats, numZones, seatsPerZone);
+
+    // Read event characteristics
+    std::string eventName, eventDate, eventTime;
+    std::cout << "Enter event name: ";
+    std::cin.ignore();
+    std::getline(std::cin, eventName);
+    std::cout << "Enter event date: ";
+    std::cin >> eventDate;
+    std::cout << "Enter event time: ";
+    std::cin >> eventTime;
+}
