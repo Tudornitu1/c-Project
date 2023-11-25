@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <ctime>
 #include <cstdlib>
 #include <cstring>
 
@@ -127,7 +126,7 @@ int main() {
     EventLocation eventLocation(maxSeats, numZones, seatsPerZone);
 
     // Read event characteristics
-    std::cin.ignore(); // Consume the newline character left in the buffer
+    std::cin.ignore(); 
     std::string eventName, eventDate, eventTime;
     std::cout << "Enter event name: ";
     std::getline(std::cin, eventName);
